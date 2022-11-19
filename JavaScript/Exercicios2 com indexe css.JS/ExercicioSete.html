@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercicio #7</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet " type="text/css " href="css/style.css " />
+    <script>
+        function mesDigitado(mes) {
+            switch (mes) {
+                case 1:
+                    return ("Janeiro");
+                    break;
+                case 2:
+                    return ("Fevereiro");
+                    break;
+                case 3:
+                    return ("Março");
+                    break;
+                case 4:
+                    return ("Abril");
+                    break;
+                case 5:
+                    return ("Maio");
+                    break;
+                case 6:
+                    return ("Junho");
+                    break;
+                case 7:
+                    return ("Julho");
+                    break;
+                case 8:
+                    return ("Agosto");
+                    break;
+                case 9:
+                    return ("Setembro");
+                    break;
+                case 10:
+                    return ("Outubro");
+                    break;
+                case 11:
+                    return ("Novembro");
+                    break;
+                case 12:
+                    return ("Dezembro");
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        var data = prompt("Informe a Data no Formato dd/MM/aaaa");
+        var dataFormatada = Date(data);
+        var separador = data.split("/");
+        alert("--- Data Formatada ---\n" + separador[0] + " de " + mesDigitado(parseInt(separador[1])) + " de " + separador[2]);
+    </script>
+
+</head>
+
+<body>
+    <img class="imgExercicios" src="../ExerciciosJS/img/adsPrincipal.jpg">
+    <br><br>
+    <a href="index.html"><input class="buttonVoltar" type="button" value="Voltar"></a>
+</body>
+
+</html>

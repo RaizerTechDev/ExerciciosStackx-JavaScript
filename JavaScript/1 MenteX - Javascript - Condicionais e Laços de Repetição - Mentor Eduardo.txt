@@ -1,0 +1,160 @@
+//Comentários - ctrl + ; ou ctrl + /
+/* shift + alt + A
+Comentarios
+de 
+bloco
+*/
+
+// console.log("Para exibir no console");
+// alert("Para exibir um alerta");
+// prompt("Para perguntar algo ao usuário e receber um dado");
+
+// Usar o ; no fim de cada expressão é válido
+
+/* Variaveis */
+let numero;
+numero = 20;
+// console.log(numero);
+
+let saldoConta = 10.500;
+// console.log(saldoConta);
+const pix1 = 0.500;
+const pix2 = 0.600;
+const pix3 = 0.700;
+const pix4 = 0.800;
+//logica
+saldoConta += pix1;
+saldoConta += pix2;
+saldoConta += pix3;
+saldoConta += pix4;
+// console.log(saldoConta);
+
+// && -> As duas ou mais questões retornem true
+// console.log(2 + 2 == 4 && 3 + 3 == 6);
+
+// - || -> Uma questão apenas precisa ser verdadeira
+// console.log(2 + 2 == 5 || 3 + 3  == 6);
+
+// console.log(2 < 5); // Menor que
+// console.log(2 > 1); // Maior que
+// console.log(2 >= 2); // Maior ou igual
+// console.log(2 <= 2); // Menor ou igual
+
+const tipo1 = 'A';
+const tipo2 = 2;
+const tipo3 = false;
+const tipo4 = null;
+let tipo5;
+
+
+
+/* Estruturas condicionais */
+
+let textoAlt = 'Programador';
+
+if (textoAlt == 'Programador') {
+  //console.log('Legal! Eu também sou programador');
+} else if (textoAlt == 'Marceneiro') {
+   //console.log('Legal! Meu pai também é Marceneiro');
+} else if (textoAlt == 'Pedreiro') {
+  //console.log('Não conheço muito sobre essa área');
+} else if (textoAlt == 'Mecânico') {
+  //console.log('Tá aí uma área que sou péssimo.');
+} else if (textoAlt == 'Limpeza') {
+  //console.log('Todo mundo sabe trabalhar um pouco né');
+} else {
+  // console.log('Não achei nada sobre isso');
+}
+
+
+
+textoAlt = 'Programador'; //--> Coloca o nome aqui ex Programador ou mecanico 
+switch (textoAlt) {
+    case 'Programador':
+         console.log('Legal! Eu também sou programador');
+    break;
+    case 'Marceneiro':
+         console.log('Legal! Meu pai também é marceneiro');
+    break;
+    case 'Pedreiro':
+        // console.log('Não conheço muito sobre essa área');
+    break;
+    case 'Mecânico':
+        // console.log('Tá aí uma área que sou péssimo');
+    break;
+    case 'Faxineira':
+        // console.log('Todo mundo sabe trabalhar um pouco né');
+    break;
+    default:
+        // console.log('Não achei nada sobre isso');
+    break;
+}
+
+
+
+
+/* Laços de Repetição */
+
+// Exiba na tela 10 números de 0 a 10;
+let c = 0;
+
+// while(c < 10) { do 0 a 9 por ser menor que 10
+while(c <= 10) { // do 0 a 10
+ // console.log(c);
+  
+  //incremento com do 1 a 10
+  c+=1;
+}
+
+c = 1;
+do {
+ //  console.log(c); // imprime do 1 a 10 repetindo o laço
+  c+=1;
+ } while(c <= 10);
+
+ 
+let novoNum = 10;
+
+while(novoNum >= 0) {
+  console.log(novoNum); // imprime do 10 a 0 repetidamente
+  novoNum -= 1;
+}
+
+// for do 1 a 10
+
+for(let cont = 1; cont <= 10; cont++) {
+     // console.log(cont); //imprime do 1 a 10 repetidamente o laço
+}
+
+
+
+/*===============  EXERCICIO 1 =================*/
+/*
+a) - Faça um algorítimo que receba 4 notas de um aluno
+e retorne a média deste aluno.
+
+b) - Média: Notas somadas / quantidade de notas
+
+c) - Na matemática, precisamos colocar entre parenteses a expressão que será dividida. (soma) / valor
+
+d) - Retorne a média do aluno em um alert
+
+### DESAFIO: ####
+
+e) - Se a média for maior 5 e menor 6 - Junto no alert, vai aparecer Recuperação
+
+f) -  Se a média for maior 6 - Junto no alert, vai aparecer Aprovado
+
+g) -  Se a média for menor 5 - Junto no alert, vai aparecer Reprovado
+
+
+-------------------
+Variáveis
+Prompt
+Alert
+If else ou Switch
+Operadores de comparação
+
+ */
+
+/*===============  /EXERCICIO 1 =================*/

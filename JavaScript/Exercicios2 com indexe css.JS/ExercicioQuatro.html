@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercicio #3</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet " type="text/css " href="css/style.css " />
+    <script>
+        var primeiroNum = parseInt(prompt("Digite o 1º Número"));
+        var segundoNum = parseInt(prompt("Digite o 2º Número"));
+        var divisao = 0;
+
+        if (segundoNum === 0) {
+            divisao = 0;
+        }
+
+        else {
+            divisao = primeiroNum / segundoNum;
+        }
+
+        document.write("<table border='1'><tr><td>Soma</td><td>Produto</td><td>divisão</td><td>Resto</td></tr>");
+        document.write("<tr><td>" + (primeiroNum + segundoNum) + "</td><td>" + (primeiroNum * segundoNum) + "</td><td>" + (divisao) + "</td><td>" + primeiroNum % segundoNum + "</td></tr></table>");
+    </script>
+
+</head>
+
+<body>
+    <img class="imgExercicios" src="../ExerciciosJS/img/adsPrincipal.jpg">
+    <br><br>
+    <a href="index.html"><input class="buttonVoltar" type="button" value="Voltar"></a>
+</body>
+
+</html>

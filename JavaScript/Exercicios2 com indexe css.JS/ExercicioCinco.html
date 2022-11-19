@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercicio #5</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet " type="text/css " href="css/style.css " />
+    <script>
+        var pesos = [61, 72, 83, 94, 105, 66, 77, 88, 99, 110];
+        var idades = [15, 20, 25, 30, 35, 40, 45, 50, 55, 60];
+        var genero = ["F", "M", "F", "M", "F", "M", "F", "M", "F", "M"];
+
+        function mediasGeral(genero, idades, pesos, seletor) {
+            var pesoSoma = 0;
+            var idadeSoma = 0;
+            var idadeMedia = 0;
+            var qtde = 0;
+
+            for (let i = 0; i < genero.length; i++) {
+                if (genero[i] === seletor) {
+                    qtde++;
+                    pesoSoma += pesos[i];
+                    idadeSoma += idades[i];
+                }
+            }
+            idadeMedia = idadeSoma / qtde;
+
+            return [pesoSoma, idadeSoma, idadeMedia, qtde]
+        }
+        var homens = mediasGeral(genero, idades, pesos, "M");
+        var mulheres = mediasGeral(genero, idades, pesos, "F");
+
+
+        alert("--== HOMENS ==--\nSão " + homens[3] +
+            " Homens. \nMédia de Pesos: " + homens[0] +
+            " kgs.\nSoma das Idade: " + homens[1] +
+            " anos.\nMedia Idade: " + homens[2] + " anos.");
+        alert("--== MULHERES ==--\nSão " + mulheres[3] +
+            " Mulheres \n Média de Peso: " + mulheres[0] +
+            " kgs.\nSoma das Idade: " + mulheres[1] +
+            " anos.\nMedia Idade: " + mulheres[2] + " anos.");
+    </script>
+
+</head>
+
+<body>
+    <img class="imgExercicios" src="../ExerciciosJS/img/adsPrincipal.jpg">
+    <br><br>
+    <a href="index.html"><input class="buttonVoltar" type="button" value="Voltar"></a>
+</body>
+
+</html>

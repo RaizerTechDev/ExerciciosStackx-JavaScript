@@ -1,0 +1,19 @@
+{
+  "name": "aluno",
+  "version": "1.0.0",
+  "description": "\"\",",
+  "type": "module",
+  "main": "aluno.js",
+  "scripts": {
+    "test": "\"scripts\": { \"test\": echo\\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "[]"
+  },
+  "keywords": [
+    "[];"
+  ],
+  "author": "\"\"",
+  "license": "ISC"
+}

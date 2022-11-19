@@ -1,0 +1,5 @@
+function solution(n) {
+    let a = Math.floor(n/10);
+    let b = n%10;
+    return a + b;
+}

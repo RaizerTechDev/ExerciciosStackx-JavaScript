@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercicio #1</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet " type="text/css " href="css/style.css " />
+    <script>
+        var altura = [1.65, 1.80, 1.82, 1.73, 1.50, 1.71, 1.89, 2.03, 1.62, 1.51, 1.78, 1.85, 1.82, 1.20, 2.02];
+        var genero = ["M", "F", "M", "F", "M", "F", "M", "F", "M", "F", "M", "F", "M", "F", "M"];
+
+
+        function alturaMaior(altura) {
+            var maiorAltura = altura[0];
+            for (let i = 0; i < altura.length; i++) {
+                if (altura[i] > maiorAltura) {
+                    maiorAltura = altura[i];
+                }
+            }
+            return maiorAltura;
+        }
+
+        function alturaMenor(altura) {
+            var menorAltura = altura[0];
+            for (let i = 0; i < altura.length; i++) {
+                if (altura[i] < menorAltura[i]) {
+                    menor = altura[i];
+                }
+            }
+            return menorAltura;
+        }
+
+        function mediaMulheres(genero, altura) {
+            var soma = 0;
+            var media = 0;
+            for (let i = 0; i < genero.length; i++) {
+                if (genero[i] === "F") {
+                    soma += altura[i];
+                    media++;
+                }
+            }
+            return (soma / media);
+        }
+
+        function qtdeHomens(genero) {
+            var homens = 0;
+            for (let i = 0; i < genero.length; i++) {
+                if (genero[i] === "M") {
+                    homens++;
+                }
+            }
+            return homens;
+        }
+
+        alert("A Maior Altura é " + alturaMaior(altura) + " Metros.");
+        alert("A Menor Altura é " + alturaMenor(altura) + " Metros.");
+        alert("A Média de Altura das Mulheres é de " + mediaMulheres(genero, altura).toFixed(2) + " Metros.");
+        alert("A Quantidade é de " + qtdeHomens(genero) + " Homens.");
+    </script>
+
+</head>
+
+<body>
+    <img class="imgExercicios" src="../ExerciciosJS/img/adsPrincipal.jpg">
+    <br><br>
+    <a href="index.html"><input class="buttonVoltar" type="button" value="Voltar"></a>
+</body>
+
+</html>

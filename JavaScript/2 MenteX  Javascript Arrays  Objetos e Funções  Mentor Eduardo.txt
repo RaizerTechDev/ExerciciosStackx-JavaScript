@@ -1,0 +1,196 @@
+//Arrays
+
+// Armazenar valores diferentes na mesma variável 
+//	       	0       1       2    =  3 índices do vetor
+ let frutas = ["uva", "pera", "maçã"]
+ frutas.pop(); // Elimina a ultima fruta do vetor --> maçã
+
+frutas.shift(); // Elimina a primeira fruta do vetor --> uva
+
+//frutas.push("abacaxi"); //Pode puxar a fruta escolhida maçã a posição ou trocar a fruta como exemplo melão, ou até mesmo, a que já tem no vetor exemplo abacaxi
+
+frutas.push("maçã");
+
+frutas.unshift("abacaxi"); //Coloca por primeiro a fruta escolhida que pode ser outra ao invés da uva
+
+console.log(frutas); //Imprime os 3 vetores
+console.log(frutas[0]) //Imprime o vetor escolhido da fruta
+console.log(frutas[1]) //Imprime o vetor escolhido da fruta
+
+
+// Podemos iterar sobre os itens de um array usando o laço for( ) { }, definindo o método .length como limitador da verificação.
+for(let i = 0; i < frutas.length; i++) {
+	// console.log(frutas[i]);
+}
+
+//Também podemos usar o laço for in que simplifica a iteração.
+// In diz respeito ao índice do array
+for(let i in frutas) {
+	console.log(frutas[i]);
+}
+-------------------------------------------------------------------
+
+// ### Objetos
+//- [x]  Coleção de propriedades chave:valor
+//[x]  A `chave` pode ser uma *string* e o `valor` pode ser qualquer informação.
+//[x]  Sintaxe
+//	3 índices do vetor -> 	0  => Pessoa 1  /  1 =>  'Pessoa 2' /  2 => 'Pessoa 3'  
+let pessoas = [
+  {
+		firstName: 'Gabriel',
+		lastName: 'Menezes',
+		age: 21
+},
+  
+    {
+		firstName: 'Rafa',
+		lastName: 'Raizer',
+		age: 45
+},
+
+ {
+		firstName: 'Alvaro',
+		lastName: 'Raizer',
+		age: 75
+ },
+  
+]  
+  
+  //console.log(pessoas); // Imprime todos os dados dos 3 vetores
+ // console.log(pessoas[2]); // Imprime todos os dados do vetor 2
+  //console.log(pessoas.[0].age); // imprime idade do vetor 0
+  //console.log(pessoas.[1].lastName); // imprime o sobrenome nome do vetor 1
+  
+]
+//Usa-se vírgula para separar as propriedades
+
+// [x]  Para acessar uma propriedade de um objeto, use uma das duas notações (sintaxes):
+// Notação de ponto →  .
+// Notação de array → [ ]
+-----------------------------------------------------
+//notaçáo de ponto
+
+const pessoa = {}
+pessoa.firstName = 'Rafa';
+   console.log(pessoa); //Imprime os dados notação de ponto do objecto 
+-------------------------------------------------------------------
+//notação de array
+const pessoa = {}
+pessoa.nome = ['Bob'];
+pessoa.sobrenome = ['Smith'];
+console.log(pessoa); //Imprime os dados notação de array do objecto 
+console.log(pessoa.nome); //Imprime os dado escolhido nome da notação de array do objecto 
+-----------------------------------------------------------------
+//Anotação de array de forma diferente
+
+let objeto = {
+  
+ 		'primeiro nome': 'Mia',
+     'segundo nome': 'Hayashi'
+}
+
+console.log(objeto); //Imprime os dados notação de array do objecto 
+console.log(objeto.primeironome = 'Mia'); //Imprime os dado ao digitar o nome em notação de array do objecto 
+
+---------------------------------------
+//Usando um array com for para tabular um conjunto de valores
+values = [];
+for (var x =0; x < 10; x++){
+ values.push([
+  2 ** x,
+  2 * x ** 2
+ ])
+};
+console.table(values)
+
+------------------------------------------------------------------
+
+
+//Funções
+
+// [x]  Bloco de código com escopo próprio
+// [x]  Utiliza parâmetros, para que os seus valores sejam passados no momento da invocação.
+// [x]  Podem ser invocadas apenas quando necessário na lógica.
+// [x]  Declaramos da seguinte forma:
+//→ function
+//→ nomeDaFuncao
+//→ ( ) parênteses - área para passagem de parâmetros 
+//→ { } bloco - onde executaremos o código
+// [x]  Veja um exemplo de função que soma dois valores
+/*
+function soma(a, b) {
+	return a + b;
+}
+
+//Fazendo apenas isso, não resultará em nenhum resultado pois ainda não invocamos essa função. Para fazer isso precisamos chamar o nome da função, seguido por ( ), com os valores dos parâmetros a e b.
+function soma(a, b) {
+	return a + b;
+}
+
+// Para exibir o resultado, utilizamos o console.log e invocamos a função dentro
+ console.log( soma(2, 2) );
+ console.log( soma(5, 8) );
+*/
+
+// Observe que o próprio log() do console é uma função. Sendo que o console é um objeto e  o log é uma função dentro desse objeto, o chamado método.
+//  As funções que recebem parâmetros, precisam do **return** para devolverem algum resultado no ato da sua invocação.
+
+//  As funções também podem ser escritas sem passagem de parâmetros, as chamadas void functions.
+//  Os parâmetros podem ser valores de variáveis, arrays, objetos e até mesmo outras funções.
+    /*
+   const valorA = Number(prompt('Digite um número'));
+   const valorB = Number(prompt('Digite outro número'));
+    
+   function soma() {
+    	return valorA + valorB;
+    }
+    console.log( soma() );
+*/
+----------------------------------------
+/*
+function multiplicação(a, b) {
+	return a * b;
+}
+
+//Fazendo apenas isso, não resultará em nenhum resultado pois ainda não invocamos essa função. Para fazer isso precisamos chamar o nome da função, seguido por ( ), com os valores dos parâmetros a e b.
+function multiplicação(a, b) {
+	return a * b;
+}
+
+// Para exibir o resultado, utilizamos o console.log e invocamos a função dentro
+ console.log( multiplicação(2, 2) );
+ console.log( multiplicação(5, 8) );
+*/
+
+// Observe que o próprio log() do console é uma função. Sendo que o console é um objeto e  o log é uma função dentro desse objeto, o chamado método.
+//  As funções que recebem parâmetros, precisam do **return** para devolverem algum resultado no ato da sua invocação.
+
+//  As funções também podem ser escritas sem passagem de parâmetros, as chamadas void functions.
+//  Os parâmetros podem ser valores de variáveis, arrays, objetos e até mesmo outras funções.
+    
+ const ValorA = Number(prompt('Digite um número'));
+ const ValorB = Number(prompt('Digite outro número'));
+    
+ function multiplicação() {
+	return ValorA * ValorB;
+    
+    }
+    console.log( multiplicação() );
+
+-----------------------------------------------------------
+
+//Funções Anônimas - Callback
+
+// Funções usadas dentro de contexto, que não recebem nome, e não dependem de invocação para acontecer.
+
+// Para exibir o resultado, utilizamos o console.log e invocamos a função dentro
+const objeto = {
+	nome: 'Rafa',
+	sobrenome: 'Raizer',
+	cumprimentar: function() {
+		alert("oi");
+	}
+}
+console.log(objeto); //Imprime os dados do objecto 
+console.log(objeto.nome); //Imprime o dado do objecto nome 
+console.log(objeto.cumprimentar); //Imprime o dado do objecto cumprimentar

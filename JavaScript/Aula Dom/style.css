@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.box3 {
+    background-color: red;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.ClasseDaBox3 {
+background-color: #fc73c2;
+color: #fff;
+padding: 20px;
+
+}

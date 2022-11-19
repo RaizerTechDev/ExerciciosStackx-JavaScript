@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercicio #3</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet " type="text/css " href="css/style.css " />
+    <script>
+        var numeros = [7, 15, 21, 20, 18, 35, 82, 19, 8, 1]
+
+        function numerosParesSomaString(numeros) {
+            var soma = 0;
+            var numerosPares = "";
+            for (let i = 0; i < numeros.length; i++) {
+                if (numeros[i] % 2 == 0) {
+                    soma += numeros[i];
+                    numerosPares += numeros[i].toString() + " ";
+                }
+            }
+            return [soma, numerosPares];
+        }
+
+        function primoFuncao(num) {
+            for (let i = 2; i < num; i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function numerosPrimosSomaString(numeros) {
+            var soma = 0;
+            var numerosPrimos = "";
+            for (let i = 0; i < numeros.length; i++) {
+                if (primoFuncao(numeros[i])) {
+                    soma += numeros[i];
+                    numerosPrimos += numeros[i].toString() + " ";
+                }
+            }
+            return [soma, numerosPrimos];
+        }
+        var paresArray = numerosParesSomaString(numeros);
+        alert("-- NUMEROS PARES --\nSão eles: " + paresArray[1] +
+            ".\nSoma: " + paresArray[0] + ".");
+        var primosArray = numerosPrimosSomaString(numeros);
+        alert("-- NUMEROS PRIMOS --\nSão eles: " + primosArray[1] +
+            ".\nSoma: " + primosArray[0] + ".");
+    </script>
+
+</head>
+
+<body>
+    <img class="imgExercicios" src="../ExerciciosJS/img/adsPrincipal.jpg">
+    <br><br>
+    <a href="index.html"><input class="buttonVoltar" type="button" value="Voltar"></a>
+</body>
+
+</html>

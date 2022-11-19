@@ -1,0 +1,46 @@
+body {
+  background-color: #6495ed;
+}
+
+.imgExercicios {
+  width: 80%;
+  padding-left: 129px;
+  padding-top: 51px;
+}
+
+.imgLogo {
+  height: 150px;
+}
+
+.buttonMenu {
+  width: 200px;
+  color: white;
+  background-color: rgba(0, 0, 255, 0.5);
+  border: 2;
+  font-size: 14px;
+  padding: 5px 0 5px 0;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.buttonVoltar {
+  width: 150px;
+  color: white;
+  background-color: red;
+  border: 4px solid rgba(0, 0, 255, 0.5);
+  font-size: 14px;
+  padding: 5px 0 5px 0;
+  margin-bottom: 10px;
+  border-radius: 4px 4px 4px 4px;
+  margin-left: 43%;
+}
+
+p {
+  background-color: rgba(0, 0, 255, 0.356);
+  color: white;
+  border: 4px solid blue;
+  width: 250px;
+  border-radius: 10px;
+  padding-left: 23px;
+}

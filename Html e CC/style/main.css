@@ -1,0 +1,117 @@
+body{
+    /* background-image: url(..//Photo\ Stackx\ para\ Linkedin.jpg) ;
+   /* background-attachment: fixed; /* fixa a imagem*/
+    /* background-position: bottom right; /*--> imagem a direita e a esquerda*/
+    /*background-position: bottom left; /*--> imagem central*/
+    /*background-repeat: repeat-y; --> repete na vertical
+    /* background-repeat: repeat-x; --> repete na horizontal*/
+   /* background: blue url(..//Photo\ Stackx\ para\ Linkedin.jpg)
+    no-repeat left top; /* --> a direita e acima*/
+  /* background-image: url(..//Desenvolvendo\ Frontend.jpg);*/
+     background-color:rgb(224, 207, 231)
+
+  } 
+
+
+   h2{ 
+    text-align: center;
+    color: white
+   /* border-width: 2px;
+    border-style: solid;
+    background-color:#fff;
+    opacity: 0.7;
+    position: absolute;
+  */
+  }
+  
+  button{
+    color: rgb(201, 20, 132);
+    padding: 80px 80px;
+    border: 10px solid red;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 40px;
+    background-color: orange;
+   /* margin-top: 150px;
+    opacity: 0.8; 
+   */
+
+}
+
+button:link{
+
+} 
+
+
+button:hover{ /*Para passar o mouse em cima e vai mudando */
+  color: rgb(201, 20, 132);
+  padding: 80px 80px;
+  border: 10px solid red;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 40px;
+  background-color: orange;
+
+} 
+
+button:active{ /*Para passar o mousee aumenta e vem depois do hover */
+  color: rgb(201, 20, 132);
+  padding: 120px 120px;
+  border: 10px solid rgb(255, 251, 0);
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 40px;
+  background-color: rgb(126, 170, 255);
+
+} 
+
+a{
+  text-decoration: none;
+  font-size: 70px;
+  color: rgb(14, 201, 21);
+  margin: 50px;
+}
+
+a:visited{ 
+  text-decoration: none;
+  font-size: 70px;
+  color: rgb(66, 12, 58);
+  margin: 50px;
+} 
+
+a:hover{  /* Para passar o mouse em cima e vai mudando */
+  color: rgb(9, 8, 8);
+  padding: 80px 80px;
+  border: 10px solid rgb(139, 10, 10);
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  background-color: rgb(20, 51, 17);
+  color: black;
+
+} 
+
+div{ /* position primeiro*/
+  /* position: static; /* --> todos tem elemento html */
+  /* position: relative; /*-->define o lado direita ou esquerda, superior ou inferior*/
+   /*position: fixed;/* --> permanece mo mesmo lugar*/
+   /*position:absolute; /* --> posicionada em relação ancestral mais próximo*/
+   /*left: 20px;
+   top: 20px; /*declara o valor superior (top) ou inferior (bottom)*/
+   z-index: -1; /*-->posição negativa joga o botão pra frente de outros elementos como a imagem*/
+
+  /* border: 5px solid black;*/
+   /* border-width: 40px 50px 60px 20px; /*--> Aqui aumenta ou diminui a borda*/
+   /*float: none;*/
+   float:left;  /*--> direita imagem e titulo*/
+   /* float: left;  /*--> esquerda imagem e titulo*/
+  
+}
+
+div > img{
+      margin-right: 10px;  /* margem da foto a direita*/
+      border: 5px solid black;
+}
+
+img{
+    float: inherit;  
+   /* float: right; /* imagem direita e titulo não mexe, fica na a esquerda*/
+   /* float: left; /* imagem esquerda e titulo não mexe, fica na a esquerda*/
+   
+}
