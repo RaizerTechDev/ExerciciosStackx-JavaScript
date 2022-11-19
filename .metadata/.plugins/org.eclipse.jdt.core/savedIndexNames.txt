@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+C:\Develop\Stackx\Front end2\.metadata\.plugins\org.eclipse.jdt.core
-3006827494.index
-2147517507.index
-1865797976.index
