@@ -6,6 +6,8 @@
 
 <img alt="VSCode" src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" height="40" width="50">
 
+https://code.visualstudio.com/download
+
 ***
  
 ### <img src="https://media.giphy.com/media/JO9WCVmDMbC0eLSlyV/giphy.gif" align="center" height="50" width="50"> &nbsp;Linguagem Tecnológica do Desafio:
